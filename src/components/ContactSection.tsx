@@ -32,8 +32,11 @@ const ContactSection = () => {
                 <Phone className="text-primary" size={24} />
               </div>
               <div>
-                <h3 className="font-heading text-lg font-semibold mb-1">Call Us</h3>
-                <a href="tel:0706156337" className="text-muted-foreground hover:text-primary transition-colors font-body">
+                <h3 className="font-heading text-lg font-semibold mb-1">Call / WhatsApp</h3>
+                <a href="tel:+254721937014" className="text-muted-foreground hover:text-primary transition-colors font-body block">
+                  +254 721 937 014
+                </a>
+                <a href="tel:0706156337" className="text-muted-foreground hover:text-primary transition-colors font-body block">
                   0706 156 337
                 </a>
               </div>
