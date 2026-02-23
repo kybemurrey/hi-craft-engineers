@@ -4,12 +4,18 @@ import serviceFab from "@/assets/service-fabrication.jpg";
 import serviceStruct from "@/assets/service-structural.jpg";
 import heroImg from "@/assets/hero-fabrication.jpg";
 import galleryWindow from "@/assets/gallery-window.jpg";
+import galleryContainer from "@/assets/gallery-container.jpg";
+import galleryDoor from "@/assets/gallery-door.jpg";
+import galleryCncReal from "@/assets/gallery-cnc-real.jpg";
 
 const images = [
+  { src: galleryCncReal, alt: "CNC plasma cutting machine in action" },
+  { src: galleryContainer, alt: "Custom container with decorative CNC panels" },
+  { src: galleryDoor, alt: "Custom fabricated steel door" },
+  { src: galleryWindow, alt: "Custom fabricated window with decorative grilles" },
   { src: serviceCnc, alt: "CNC laser cutting in progress" },
   { src: serviceFab, alt: "Custom metal gate fabrication" },
   { src: serviceStruct, alt: "Steel doors and structural frames" },
-  { src: galleryWindow, alt: "Custom fabricated window with decorative grilles" },
   { src: heroImg, alt: "Workshop overview" },
 ];
 
