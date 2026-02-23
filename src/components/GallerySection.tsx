@@ -3,11 +3,13 @@ import serviceCnc from "@/assets/service-cnc.jpg";
 import serviceFab from "@/assets/service-fabrication.jpg";
 import serviceStruct from "@/assets/service-structural.jpg";
 import heroImg from "@/assets/hero-fabrication.jpg";
+import galleryWindow from "@/assets/gallery-window.jpg";
 
 const images = [
   { src: serviceCnc, alt: "CNC laser cutting in progress" },
   { src: serviceFab, alt: "Custom metal gate fabrication" },
   { src: serviceStruct, alt: "Steel doors and structural frames" },
+  { src: galleryWindow, alt: "Custom fabricated window with decorative grilles" },
   { src: heroImg, alt: "Workshop overview" },
 ];
 
