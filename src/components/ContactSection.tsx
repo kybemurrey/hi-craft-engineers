@@ -92,10 +92,20 @@ const ContactSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="space-y-5"
-            onSubmit={(e) => e.preventDefault()}
+            onSubmit={(e) => {
+              e.preventDefault();
+              const form = e.currentTarget;
+              const name = (form.elements.namedItem("name") as HTMLInputElement)?.value || "";
+              const phone = (form.elements.namedItem("phone") as HTMLInputElement)?.value || "";
+              const project = (form.elements.namedItem("project") as HTMLTextAreaElement)?.value || "";
+              const subject = encodeURIComponent(`Quote Request from ${name}`);
+              const body = encodeURIComponent(`Name: ${name}\nPhone: ${phone}\n\nProject Details:\n${project}`);
+              window.open(`mailto:info@hicraftengineering.co.ke?subject=${subject}&body=${body}`, "_self");
+            }}
           >
             <div>
               <input
+                name="name"
                 type="text"
                 placeholder="Your Name"
                 className="w-full bg-secondary border border-border rounded-sm px-4 py-3 font-body text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors"
@@ -103,6 +113,7 @@ const ContactSection = () => {
             </div>
             <div>
               <input
+                name="phone"
                 type="tel"
                 placeholder="Phone Number"
                 className="w-full bg-secondary border border-border rounded-sm px-4 py-3 font-body text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors"
@@ -110,6 +121,7 @@ const ContactSection = () => {
             </div>
             <div>
               <textarea
+                name="project"
                 rows={4}
                 placeholder="Describe your project..."
                 className="w-full bg-secondary border border-border rounded-sm px-4 py-3 font-body text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors resize-none"
