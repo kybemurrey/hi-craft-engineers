@@ -98,9 +98,8 @@ const ContactSection = () => {
               const name = (form.elements.namedItem("name") as HTMLInputElement)?.value || "";
               const phone = (form.elements.namedItem("phone") as HTMLInputElement)?.value || "";
               const project = (form.elements.namedItem("project") as HTMLTextAreaElement)?.value || "";
-              const subject = encodeURIComponent(`Quote Request from ${name}`);
-              const body = encodeURIComponent(`Name: ${name}\nPhone: ${phone}\n\nProject Details:\n${project}`);
-              window.open(`mailto:info@hicraftengineering.co.ke?subject=${subject}&body=${body}`, "_self");
+              const message = encodeURIComponent(`*Quote Request*\n\nName: ${name}\nPhone: ${phone}\n\nProject Details:\n${project}`);
+              window.open(`https://wa.me/254721937014?text=${message}`, "_blank");
             }}
           >
             <div>
