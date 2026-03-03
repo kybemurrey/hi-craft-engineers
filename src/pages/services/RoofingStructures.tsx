@@ -1,13 +1,13 @@
 import { Building2 } from "lucide-react";
 import ServicePageLayout from "@/components/ServicePageLayout";
-import serviceStructural from "@/assets/service-structural.jpg";
+import serviceRoofing from "@/assets/service-roofing.jpg";
 
 const RoofingStructures = () => (
   <ServicePageLayout
     title="Roofing Structures"
     subtitle="Steel Roofing"
     icon={Building2}
-    image={serviceStructural}
+    image={serviceRoofing}
     description="Steel roof trusses, purlins, and complete roofing frameworks. Engineered for strength and designed for Kenyan weather conditions."
     features={[
       "Steel roof trusses — flat and pitched",
