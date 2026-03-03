@@ -1,13 +1,13 @@
 import { Car } from "lucide-react";
 import ServicePageLayout from "@/components/ServicePageLayout";
-import galleryContainer from "@/assets/gallery-container.jpg";
+import serviceCarshades from "@/assets/service-carshades.jpg";
 
 const CarShadesCanopies = () => (
   <ServicePageLayout
     title="Car Shades & Canopies"
     subtitle="Shade Structures"
     icon={Car}
-    image={galleryContainer}
+    image={serviceCarshades}
     description="Modern carports, shade structures, and canopies with polycarbonate or IBR sheet roofing. Protecting vehicles in style."
     features={[
       "Single and double carports",
