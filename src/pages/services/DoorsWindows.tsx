@@ -1,13 +1,13 @@
 import { Home } from "lucide-react";
 import ServicePageLayout from "@/components/ServicePageLayout";
-import galleryWindow from "@/assets/gallery-window.jpg";
+import serviceDoorsWindows from "@/assets/service-doors-windows.jpg";
 
 const DoorsWindows = () => (
   <ServicePageLayout
     title="Doors & Windows"
     subtitle="Quality Frames"
     icon={Home}
-    image={galleryWindow}
+    image={serviceDoorsWindows}
     description="Steel and aluminium doors, security doors, window frames, and grills. Custom sizes and designs for residential and commercial properties."
     features={[
       "Steel security doors with multi-lock systems",
